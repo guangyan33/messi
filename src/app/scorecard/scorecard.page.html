@@ -1,0 +1,59 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <ion-item>
+          <ion-select placeholder="MM" style="width: 100" ok-text="Okay" cancel-text="Nah">
+            <ion-select-option value="dos">DOS</ion-select-option>
+            <ion-select-option value="lunix">Linux</ion-select-option>
+            <ion-select-option value="mac7">Mac OS 7</ion-select-option>
+            <ion-select-option value="mac8">Mac OS 8</ion-select-option>
+            <ion-select-option value="win3.1">Windows 3.1</ion-select-option>
+            <ion-select-option value="win95">Windows 95</ion-select-option>
+            <ion-select-option value="win98">Windows 98</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4">
+        <ion-item>
+          <ion-select placeholder="Month" style="width: 100" ok-text="Okay" cancel-text="Nah">
+            <ion-select-option value="dos">DOS</ion-select-option>
+            <ion-select-option value="lunix">Linux</ion-select-option>
+            <ion-select-option value="mac7">Mac OS 7</ion-select-option>
+            <ion-select-option value="mac8">Mac OS 8</ion-select-option>
+            <ion-select-option value="win3.1">Windows 3.1</ion-select-option>
+            <ion-select-option value="win95">Windows 95</ion-select-option>
+            <ion-select-option value="win98">Windows 98</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4">
+        <ion-item>
+          <ion-select placeholder="Dept" style="width: 100" ok-text="Okay" cancel-text="Nah">
+            <ion-select-option value="dos">DOS</ion-select-option>
+            <ion-select-option value="lunix">Linux</ion-select-option>
+            <ion-select-option value="mac7">Mac OS 7</ion-select-option>
+            <ion-select-option value="mac8">Mac OS 8</ion-select-option>
+            <ion-select-option value="win3.1">Windows 3.1</ion-select-option>
+            <ion-select-option value="win95">Windows 95</ion-select-option>
+            <ion-select-option value="win98">Windows 98</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+
+  <ion-segment [(ngModel)]="segment" scrollable >
+    <ion-segment-button *ngFor="let c of categories" value="{{ c }}">
+      {{ c }}
+    </ion-segment-button>
+  </ion-segment>
+
+
+</ion-content>
