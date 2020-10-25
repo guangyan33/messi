@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScorecardPage implements OnInit {
 
+  categories = ['Financial', 'Operations', 'Digitalisation', 
+  'Customer', 'People', 'Products'];
+
   constructor() { }
 
   ngOnInit() {
