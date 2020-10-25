@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'scorecard',
     loadChildren: () => import('./scorecard/scorecard.module').then( m => m.ScorecardPageModule)
+  },  {
+    path: 'remarks',
+    loadChildren: () => import('./remarks/remarks.module').then( m => m.RemarksPageModule)
   },
+
 ];
 
 @NgModule({
