@@ -11,8 +11,9 @@ ion-select{
   }
   
   .data-table {
-    min-width: 80px;
+    min-width: 50px;
     min-height: 600px;
+    text-align: center;
   
   ion-input{
     font-size: xx-small;
@@ -21,4 +22,8 @@ ion-select{
   
   ion-col{
     font-size: xx-small;
+  }
+  .TargetActual{
+      margin-top: 20px;
+      min-height: 110px;
   }
