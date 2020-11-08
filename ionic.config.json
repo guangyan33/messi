@@ -1,5 +1,7 @@
 {
   "name": "messi",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

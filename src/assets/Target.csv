@@ -1,0 +1,75 @@
+,,,Dept,,Reference,+ Products,,CDE,,ITSS,,SM,,CDO,,Nwk Ops + Sys Ops,,CDO,,Nwk Ops + Sys Ops,,TAC,,SGO,,CC,,DCIO,,SATOps,,PM,,CSS,,GSP,,DSS,,GD/BOS,,GEIM,,GD/DSS,
+,,,Weightage,,,,,20%,,50%,,10%,,10%,,10%,,100%,,100%,,100%,,70%,,30%,,100%,,100%,,100%,,70%,,30%,,100%,,100%,,100%,,100%,
+,,,MM,,,,,Chee Kwong,,Chee Kwong,,Chee Kwong,,Chee Kwong,,Chee Kwong,,Kwang Sheng,,Vrijesh,,Teck Cheong,,Quee Bock,,Quee Bock,,Benson,,Sheng Young,,Emisukri,,"Keith Kan
+",,"Keith Kan
+",,Wey Gie,,Vincent,,Soh Yen,,Kim Yee,
+,,,,,,,,"Melvin
+Nicos
+Anwar",,Francis,,Melvin,,"Kwang Sheng
+Yung Yeow",,Vrijesh,,Yung Yeow,,,,,,,,,,,,,,,,"Philip
+Boon Kwang",,"Christian
+",,,,,,,,,
+HR Central Category,Category,KPI,Target,Type,A,B,,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%,Total,%
+Business - Financial & Operational,Financial,Support Revenue,"SEB - CDE, ITSS, DSS, BOS
+Dom/Intl - TAC, Nwk Ops, SM, PM Ops, CSS, GSP, GSD, Sys Ops
+Cloud - CDO
+Hosting - DCIO
+Satellite - SATOps
+GEIM",M,30,30,,45,5,40,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,10,30,5,30,5,30,5,50,20,50,10
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,Meet Revenue,"Department specific, CDE and TS",M,,,,,15,,15,,,,5,,5,,5,,5,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,Meet Project P&L (Project Cost),"Department specific, CDE and TS",M,,,,,15,,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,Meet Opex,"Department specific, all",M,,,,,5,,5,,20,,15,,15,,15,,15,,20,,20,,20,,15,,15,,15,,10,,15,,15,,15,,20,,20
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,Meet Capex,"Department specific, all",M,,,,,5,,5,,5,,5,,5,,5,,5,,5,,5,,5,,10,,10,,10,,10,,10,,10,,10,,10,,20
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Finacial & Operational,Operations,Meet Operations KPI ,Department specific in BPR,M,20,15,,20,20,20,20,10,10,20,20,20,20,20,20,20,20,10,10,10,10,30,30,15,15,10,10,10,10,10,10,5,5,15,15,20,20,0,0,0,0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,Y,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Innovation,Digitalisation,Deliver SMART Projects,Deliver projects registered with DSS,Y,20,15,,20,20,10,5,20,10,15,10,15,10,15,10,15,10,20,10,20,10,20,10,20,10,20,10,20,5,20,10,15,5,35,35,30,25,0,,0,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,Deliver Agile squads,"Implement agile squads for P2O, O2P, Networks, Systems and Digital Projects",Y,,,,,,,5,,,,5,,5,,5,,5,,0,,,,,,,,,,5,,5,,5,,,,5,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,Meet Digitalised Trans,Customer 20%,Y,,,,,,,,,10,,,,,,,,,,5,,,,,,,,3,,,,2.5,,,,,,,,,,
+,,,Provisioning 27%,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,,2.5,,5,,,,,,,,
+,,,Operations 65%,,,,,,,,,,,,,,,,,,,,5,,10,,10,,,,4,,,,,,,,,,,,,,
+,,,Datacentre 35%,,,,,,,,,,,,,,,,,,,,,,,,,,10,,,,,,,,,,,,,,,,
+,,,Quality 25%,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,Security 27%,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,,,,,,,,,,,,,,
+,Customer,Meet CE Targets,GLE SM 96%,Y,,,,5,,0,,10,10,5,,5,,5,,5,,10,,10,,10,,5,,10,,10,,10,,20,,10,,10,,25,25,25,
+,,,GLE PM 89%,Y,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,,,,,,,,,,,,
+,,,GLE OFM 74%,y,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,,,,,,,,,,
+,,,GLE OFD 65%,Y,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,,,,,,,,
+,,,BS OF eVolve 68%,Y,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,BS OF Biz 66%,Y,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,GLE FRD 68%,Y,,,,,,,,,,,,,5,,,,5,,10,,10,,10,,,,,,,,,,,,,,,,,,
+,,,BS FR eVolve 70%,Y,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,BS FR Biz 71%,Y,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SatOps FR 85%,Y,,,,,,,,,,,,,,,,,,,,,,,,,,,10,,,,,,,,,,,,,,
+,,,"Internal CE DSS, BOS",Y,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,,10,,,,25
+,,,Vendor-accredidation CE,Y,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,"Non-contractual Customer CE DCIO, CDE, Cloud",Y,,,,,5,,,,,,5,,,,5,,,,,,,,,,5,,,,,,,,,,,,,,,,
+People - Employee Engagement,People,Meet Engagement Score,SEB Target 58,Y,10,10,,10,5,10,5,10,5,10,5,10,5,10,5,10,5,10,5,10,5,10,5,10,5,10,5,10,5,10,5,10,5,10,5,10,5,25,12.5,25,12.5
+,,Meet Sentiment Score,SEB Target 80,Y,,,,,5,,5,,5,,5,,5,,5,,5,,5,,5,,5,,5,,5,,5,,5,,5,,5,,5,,12.5,,12.5
+Business - Innovation,Products,Support Productisation ,Support product management functions and meet product launches,Y,0,20,,0,0,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,0,0,20,20,20,20,20,20,20,20,20,20,0,0,0,0,0,0,0,0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,100,100,,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Financial & Operational,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Innovation,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Process,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Strategy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Customer Experience,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Other,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+People - Employee Engagement,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+People - Talent Development,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+People - Other,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

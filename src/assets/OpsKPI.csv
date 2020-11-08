@@ -1,0 +1,66 @@
+,,,,,,,,,,,,,,,,,,,,
+,Month:,,,,,,,,,,,,,,,,,,,
+,Sep,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+Sno,Department,Category,KPI,Definition,Target,,,YTD,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec,Jan,Feb,Mar
+1,DCIO,Customer (Common),Complaints from internal and external customers,Formal complaint from either internal & external customers,=,0,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+2,DCIO,Customer (Common),Escalations to VP and above,Any internal operations escalation to VP level and above to get support due to lapse or non-adherence of the BU agreement. ,=,0,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+3,DCIO,Customer (Common),eLearning (Customer),"Complete eLearning in Percipio by 31 Dec 2020: 
+1. Exploring Customer Journey Mapping",=,1,% (C-09),100.00%,0.00%,0.00%,30.91%,70.90%,100.00%,100.00%,,,,,,
+4,DCIO,Quality (Common),eLearning (Quality),"Complete eLearning in Percipio by 31 Dec 2020:
+1. Managing for Operational Excellence
+2. Enabling Business Process Improvement",=,1,% (C-09),100.00%,0.00%,0.00%,30.91%,70.90%,100.00%,100.00%,,,,,,
+5,DCIO,Quality (Common),Maturity improvement,"Improve Quality Maturity against baseline assessment according to the following target:
+If baseline assessment < 2 : Target set +0.2 or more
+If baseline assessment 2 to < 3 : Target set +0.1 or more
+If baseline assessment 3 or more : Target maintained or more",>=,2.79,# (Y-10),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+6,DCIO,People (Common),eLearning (People),"Complete eLearning in Percipio by 31 Dec 2020:
+1. Forging Ahead with Perseverance and Resilience",=,1,% (C-09),100.00%,0.00%,0.00%,30.91%,70.90%,100.00%,100.00%,,,,,,
+7,DCIO,People (Common),YVS (Engagement score),To meet SEB Engagement Target: 58%,>=,1,% (C-12),0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,,,,,,
+8,DCIO,People (Common),YVS (Sentiment score),To meet SEB Sentiment Target: 80%,>=,1,% (C-12),0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,,,,,,
+9,DCIO,People (Common),Internal team building,Have at least 1 or more team building events in the dept ,>=,1,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+10,DCIO,People (Common),WOW Performers nominations,"Submit 5 nominations per quarter, covering each category. Staffs who demonstrated outstanding dedication, competence and championing initiatives relating to the GD 4 Firsts + Digitalization",>=,20,# (Y-12),3.00,0.00,1.00,0.00,1.00,0.00,1.00,,,,,,
+11,DCIO,People (Common),SPOT award,To give SPOT awards for staff going the extra mile beyond their regular duties to achieve a remarkable and positive outcome,>=,10,# (Y-12),8.00,0.00,0.00,2.00,1.00,1.00,4.00,,,,,,
+12,DCIO,People (Common),Digital brownbag,"Attend Digital Brownbag with attendance at least 20% of dept HC per session (total 4 sessions in one year).
+(Each dept will score 25% if each Brown session is met with the min attendance as required)",=,1,% (C-12),50.00%,0.00%,0.00%,25.00%,0.00%,0.00%,50.00%,,,,,,
+13,DCIO,People (Common),Skip levels,To have at least 2 skip levels for mgmt communication to staff,>=,2,# (Y-12),1.00,0.00,0.00,1.00,0.00,0.00,0.00,,,,,,
+14,DCIO,People (Common),Staff meeting,"To have month staff meeting (80% attendance) to communicate business directions/strategy, career progression, review resource planning, upcoming events.",>=,1,# (M),1.00,1.00,1.00,1.00,1.00,1.00,1.00,,,,,,
+15,DCIO,People (Common),Individual Development Plan,To complete individual IDP for all staff ,>=,1,% (C-09),15.00%,0.00%,0.00%,0.00%,0.00%,15.00%,15.00%,,,,,,
+16,DCIO,People (Common),PR1/PR2 retention,To retain 50% high performers in organization,>=,0.5,% (A),100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,,,,,,
+17,DCIO,Security (Common),"Security Breaches, Incidents & Fraud","No violation of security policies; Events that resulted in service failure, confidentiality breach, unauthorised access, modification, loss or reputational damage; Dishonest acts performed to obtain some benefit.",=,0,# (M),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+18,DCIO,Security (Common),eLearning (Security),"Complete eLearning in Percipio by 31 Dec 2020:
+1. An Executive's Guide to Security: Understanding Security Threats
+2. An Executive's Guide to Security: Protecting Your Information ",=,1,% (C-09),11.00%,0.00%,0.00%,1.82%,7.27%,10.05%,11.00%,,,,,,
+19,DCIO,Digital (Common),eLearning (Digital),"Complete eLearning in Percipio by 31 Dec 2020: 
+1. Cultivating Enterprise Agile
+2. Championing Digital Transformation
+3. Cloud Computing Basics",=,1,% (C-09),75.00%,0.00%,0.00%,6.06%,11.52%,75.00%,75.00%,,,,,,
+20,DCIO,Digital (Common),Achieve Digital Savings,Achieve OPEX savings from digitalisation initiatives,>=,1094000,# (Y-12),521340.00,0.00,360000.00,0.00,44780.00,48280.00,68280.00,,,,,,
+21,DCIO,Quality,Authorized change requests,All change requests must be CAB approved or pre-approved in order for implementation,=,1,% (A),100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,,,,,,
+22,DCIO,Quality,SOC2 certification,Achieve SOC2 attestation report without any major observation,=,1,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+23,DCIO,Quality,OSPAR certification,Achieve OSPAR attestation report without any major observation,=,1,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+24,DCIO,Quality,ISO9001 certification,Achieve ISO9001 certification without any CAT1 finding,=,1,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+25,DCIO,Quality,ISO22301 certification,Achieve ISO22301 certification without any CAT1 finding,=,1,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+26,DCIO,Quality,SS507 certification,Achieve SS507 certification without any CAT1 finding,=,1,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+27,DCIO,Quality,ISO46000-1 certification,Achieve ISO46000-1 certification without any CAT1 finding,=,1,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+28,DCIO,Quality,ISO50000-1 certification,Achieve ISO50000-1 certification without any CAT1 finding,=,1,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+29,DCIO,Quality,Service request completion,Service request completed within target,>=,0.95,% (A),95.00%,95.00%,95.00%,95.00%,95.00%,95.00%,95.00%,,,,,,
+30,DCIO,Quality,Service availability for all building infrastructure services,Service availability for all building infrastructure services based on uptime 99.999%,>=,0.99999,% (A),100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,,,,,,
+31,DCIO,Quality,Service causing Sev 1 Incidents,No service causing Sev 1 Incidents in Data Centres,=,0,# (M),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+32,DCIO,Quality,No recurrence of resolved problems,No problem or known error should reoccur within 90 days from the resolution,=,0,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+33,DCIO,Quality,P1 Problem with preventive solution identified,Identify solution/service improvement plan within 30 days,>=,0.9,% (A),90.00%,90.00%,90.00%,90.00%,90.00%,90.00%,90.00%,,,,,,
+34,DCIO,Quality,P2 Problem with preventive solution identified,Identify solution/service improvement plan within 60 days,>=,0.9,% (A),90.00%,90.00%,90.00%,90.00%,90.00%,90.00%,90.00%,,,,,,
+35,DCIO,Security,PEN tests on internet facing Infra systems,Conduct annual PEN test on internet-facing Infra systems to identify vulnerabilities,>=,1,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+36,DCIO,Security,PEN test vulnerabilities remediation,Resolve vulnerabilities identified from PEN tests within 30 days,=,1,% (A),100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,,,,,,
+37,DCIO,Security,"Monthly GD Cyber Sec updates for Patches, Antivirus, IMDA advisories, Inventory asset changes",Complete actions required for monthly updates and Critical/High risk vulnerability remediation within SLA,=,1,% (A),100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,,,,,,
+38,DCIO,Security,ISO27000 certification,Achieve ISO27000 certification without any CAT1 finding,=,1,# (Y-12),0.00,0.00,0.00,0.00,0.00,0.00,0.00,,,,,,
+39,DCIO,Customer,Non-contractual Customer CE ,Measure customer experience to meet 2020 annual survey target,>=,0.8,% (C-12),0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,,,,,,
+40,DCIO,Customer ,Compliments from external customers,An email  from external customers that describes an act or gesture expressed to the staff. ,>=,4,# (Y-12),2.00,0.00,0.00,0.00,1.00,1.00,0.00,,,,,,
+41,DCIO,Customer ,CE Heroes nominations,Submit nominations for staffs who received outstanding compliments from external customers ,>=,1,# (M),0.33,0.00,0.00,0.00,1.00,1.00,0.00,,,,,,
+42,DCIO,People,Interlock with BP on DC,Monthly interlock co-chair by Benson/ Lim Kiat and Terence Toh,=,1,% (A),100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,,,,,,
+43,DCIO,People,OLA defined with BP on DC,OLA defined with BP on DC,=,1,% (A),100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,,,,,,
+44,DCIO,Product,DCW2 Development,Complete technical study and design by appointed consultants,=,1,% (C-06),0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,,,,,,
+45,DCIO,Product,DCW2 Development,Obtain MC/Board Approval for new CLS-DC development,=,1,% (C-09),0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,,,,,,
+46,DCIO,Product,DCW2 Development,Execute land allocation from JTC by T+3mths,=,1,% (C-12),0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,,,,,,
+46,DCIO,Digital,Digitalised Transaction,Meet Digitalised Transaction Target,>=,0.35,% (C-12),0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,0.00%,,,,,,
+46,DCIO,Digital,Digital Projects,Complete Digital Projects,>=,8,# (Y-12),3.00,0.00,2.00,0.00,0.00,1.00,0.00,,,,,,
