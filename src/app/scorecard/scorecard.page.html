@@ -1,8 +1,6 @@
 <ion-header>
 </ion-header>
-
 <ion-content>
-
   <ion-grid>
     <ion-row>
       <ion-col size="4">
@@ -52,8 +50,6 @@
     </ion-row>
   </ion-grid>
 
-  
-
   <ion-segment [(ngModel)]="segment" scrollable >
     <ion-segment-button value="Financial">
       Financial 
@@ -77,89 +73,59 @@
   
   <div class="info" [ngSwitch]="segment">
     <div *ngSwitchCase="'Financial'">
-      
       <ion-grid>
         <ion-row>
           <ion-col>
             KPI
-    
             <table border="1" class="data-table">
               <tr *ngFor="let row of RevenueKPI">
-    
                 <td>{{row[0]}}</td>
-    
               </tr>
-    
               <tr *ngFor="let row of (Financial || [])">
-    
                 <td *ngIf="row[2]">{{row[2]}}</td>
-    
               </tr>
             </table>
-    
           </ion-col>
           <ion-col>
             Target
-    
             <table border="1" class="data-table">
               <tr *ngFor="let row of RevenueData">
                 <td>{{row[0]}}</td>
-    
               </tr>
-    
               <tr *ngFor="let row of Financial">
                 <td *ngIf="row[3]">{{row[3]}}</td>
-    
               </tr>
-    
             </table>
-    
-    
           </ion-col>
           <ion-col>
             Type
-    
             <table border="1" class="data-table">
               <tr *ngFor="let row of FinancialFirstType">
                 <td *ngIf="row[4]">{{row[4]}}</td>
-    
               </tr>
-    
               <tr *ngFor="let row of Financial">
                 <td *ngIf="row[4]">{{row[4]}}</td>
-    
               </tr>
-    
               <!-- <tr *ngFor="let row of FinancialType">
                 <td *ngIf="row[4]">{{row[4]}}</td>
-    
               </tr> -->
-    
             </table>
-    
           </ion-col>
           <ion-col>
-            
             <div *ngFor="let row of FinancialFirstType">%(Total:{{row[28]}})</div>
-    
             <table border="1" class="data-table">
               <tr *ngFor="let row of FinancialFirstType">
                 <td *ngIf="row[29]">{{row[29]}}</td>
-    
               </tr>
-    
               <tr *ngFor="let row of Financial">
                 <td *ngIf="row[29]">{{row[29]}}</td>
-    
               </tr>
             </table>
-    
           </ion-col>
           <ion-col>
             20-Sep
           </ion-col>
           <ion-col>
-    
           </ion-col>
           <ion-col>
             20 - {{getSelectedMonth}}
@@ -168,14 +134,68 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-    
-      <ion-grid>
-    
-      </ion-grid>
+      
 
     </div> 
     <div *ngSwitchCase="'Operation'">
-      operation
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            KPI
+            <table border="1" class="data-table">
+              <tr *ngFor="let row of RevenueKPI">
+                <td>{{row[0]}}</td>
+              </tr>
+              <tr *ngFor="let row of (Financial || [])">
+                <td *ngIf="row[2]">{{row[2]}}</td>
+              </tr>
+            </table>
+          </ion-col>
+          <ion-col>
+            Target
+            <table border="1" class="data-table">
+              <tr *ngFor="let row of RevenueData">
+                <td>{{row[0]}}</td>
+              </tr>
+              <tr *ngFor="let row of Financial">
+                <td *ngIf="row[3]">{{row[3]}}</td>
+              </tr>
+            </table>
+          </ion-col>
+          <ion-col>
+            Type
+            <table border="1" class="data-table">
+              <tr *ngFor="let row of FinancialFirstType">
+                <td *ngIf="row[4]">{{row[4]}}</td>
+              </tr>
+              <tr *ngFor="let row of Financial">
+                <td *ngIf="row[4]">{{row[4]}}</td>
+              </tr>
+            </table>
+          </ion-col>
+          <ion-col>
+            <div *ngFor="let row of FinancialFirstType">%(Total:{{row[28]}})</div>
+            <table border="1" class="data-table">
+              <tr *ngFor="let row of FinancialFirstType">
+                <td *ngIf="row[29]">{{row[29]}}</td>
+              </tr>
+              <tr *ngFor="let row of Financial">
+                <td *ngIf="row[29]">{{row[29]}}</td>
+              </tr>
+            </table>
+          </ion-col>
+          <ion-col>
+            20-Sep
+          </ion-col>
+          <ion-col>
+          </ion-col>
+          <ion-col>
+            20 - {{getSelectedMonth}}
+            <div *ngFor="let row of RevenueData">T : {{(row[4] - row[16] - row[15] - row[14] - row[13] - row[12] - row[11])}}</div>
+            <div *ngFor="let row of RevenueActual">A : {{(row[4] - row[16] - row[15] - row[14] - row[13] - row[12] - row[11])}}</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div> 
     <div *ngSwitchCase="'Digitalisation'">
       digitalisation
@@ -187,9 +207,7 @@
       people
     </div> 
     <div *ngSwitchCase="'Products'">
-      products
+      products  
     </div> 
-
-
   </div>
 </ion-content>

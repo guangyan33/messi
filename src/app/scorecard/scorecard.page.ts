@@ -23,6 +23,7 @@ export class ScorecardPage implements OnInit {
   FinancialTotal: any[] = [];
   headerRow: any[] = [];
   getSelectedMonth: any;
+  CustomerKpi: any[] = [];
 
   constructor(private http: HttpClient,
     private papa: Papa,
@@ -64,13 +65,13 @@ export class ScorecardPage implements OnInit {
 
   private extractTarget(res) {
     let Financial = res || '';
-
     this.papa.parse(Financial, {
       complete: parsedData => {
         // this.headerRow = parsedData.data.splice(0, 1)[0];
         this.FinancialFirstType = parsedData.data.splice(5, 1);
         this.Financial = parsedData.data.splice(5, 8);
         this.FinancialType = parsedData.data.splice(10, 1);
+        this.CustomerKpi =parsedData.data.splice(42, 1)
       }
     });
   }
@@ -87,6 +88,4 @@ export class ScorecardPage implements OnInit {
       }
     });
   }
-
-
 }
