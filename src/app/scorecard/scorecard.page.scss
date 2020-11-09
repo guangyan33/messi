@@ -14,10 +14,19 @@ ion-select{
     min-width: 50px;
     min-height: 600px;
     text-align: center;
-  
+  }
+  .data-table-operation {
+    min-width: 50px;
+    min-height: 120px;
+    text-align: center;
+  }
+  .data-table-digital {
+    min-width: 50px;
+    min-height: 360px;
+    text-align: center;
+  }
   ion-input{
     font-size: xx-small;
-  }
   }
   
   ion-col{

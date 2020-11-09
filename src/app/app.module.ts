@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PapaParseModule } from 'ngx-papaparse';
 import { File } from '@ionic-native/file/ngx';
 
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],

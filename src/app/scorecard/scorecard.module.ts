@@ -8,6 +8,7 @@ import { ScorecardPageRoutingModule } from './scorecard-routing.module';
 
 import { ScorecardPage } from './scorecard.page';
 
+
 @NgModule({
   imports: [
     CommonModule,
