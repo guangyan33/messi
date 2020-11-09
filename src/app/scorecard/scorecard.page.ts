@@ -202,6 +202,7 @@ export class ScorecardPage implements OnInit {
       complete: parsedData => {
         // this.headerRow = parsedData.data.splice(0, 1)[0];
         this.MeetRevenueTarget = parsedData.data.splice(3, 1);
+        this.MeetRevenueTarget = parsedData.data.splice(3, 1);
       }
     });
   }
