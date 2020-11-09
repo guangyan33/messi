@@ -629,8 +629,20 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-
+      <ion-card>
+        <ion-card-header>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-textarea placeholder="Please key in your comments here..."></ion-textarea>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+      <ion-button expand="block" >Submit</ion-button>
+      
     </div>
+
+    
     <div *ngSwitchCase="'Operation'">
 
       <ion-grid>
@@ -912,9 +924,19 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-
-
+      <ion-card>
+        <ion-card-header>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-textarea placeholder="Please key in your comments here..."></ion-textarea>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+      <ion-button expand="block" >Submit</ion-button>
     </div>
+
+
     <div *ngSwitchCase="'Digitalisation'">
       <ion-grid>
         <ion-row>
@@ -998,11 +1020,19 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-
-
+      <ion-card>
+        <ion-card-header>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-textarea placeholder="Please key in your comments here..."></ion-textarea>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+      <ion-button expand="block" >Submit</ion-button>
     </div>
-    <div *ngSwitchCase="'Customer'">
 
+    <div *ngSwitchCase="'Customer'">
       <ion-grid>
         <ion-row>
           <ion-col size="2">
@@ -1010,12 +1040,8 @@
 
             <table class="data-table-operation">
               <tr *ngFor="let row of CustomerKPI">
-
                 <td>{{row[2]}}</td>
-
               </tr>
-
-
             </table>
 
           </ion-col>
@@ -1106,9 +1132,18 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-
-
+      <ion-card>
+        <ion-card-header>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-textarea placeholder="Please key in your comments here..."></ion-textarea>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+      <ion-button expand="block" >Submit</ion-button>
     </div>
+
     <div *ngSwitchCase="'People'">
 
       <ion-grid>
@@ -1214,8 +1249,19 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-
+ <ion-card>
+    <ion-card-header>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Please key in your comments here..."></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="block" >Submit</ion-button>
     </div>
+
+
     <div *ngSwitchCase="'Products'">
 
       <ion-grid>
@@ -1320,6 +1366,16 @@
           </ion-col>
         </ion-row>
       </ion-grid>
+      <ion-card>
+        <ion-card-header>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-textarea placeholder="Please key in your comments here..."></ion-textarea>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+      <ion-button expand="block" >Submit</ion-button>
     </div>
   </div>
 </ion-content>
