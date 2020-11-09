@@ -119,15 +119,10 @@ export class ScorecardPage implements OnInit {
         // this.headerRow = parsedData.data.splice(0, 1)[0];
         this.FinancialFirstType = parsedData.data.splice(5, 1);
         this.Financial = parsedData.data.splice(5, 8);
-<<<<<<< HEAD
-        this.FinancialType = parsedData.data.splice(10, 1);
-        
-=======
         // this.FinancialType = parsedData.data.splice(10, 1);
         this.OperationKPI = parsedData.data.splice(6, 1);
         this.OperationKPIType = parsedData.data.splice(7, 1);
         this.DigitalisationKPI = parsedData.data.splice(8, 10);
->>>>>>> 3c1f8bd53b8592a77875fa4bceeef65c9d31e826
       }
     });
   }
@@ -165,7 +160,6 @@ export class ScorecardPage implements OnInit {
         // this.headerRow = parsedData.data.splice(0, 1)[0];
         this.CapexTarget = parsedData.data.splice(2, 1);
         this.CapexActual = parsedData.data.splice(2, 1);
-       
       }
     });
   }
@@ -180,6 +174,4 @@ export class ScorecardPage implements OnInit {
       }
     });
   }
-
-
 }
