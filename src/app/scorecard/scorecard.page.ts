@@ -28,11 +28,8 @@ export class ScorecardPage implements OnInit {
   CapexActual: any[] = [];
   headerRow: any[] = [];
   getSelectedMonth: any;
-<<<<<<< HEAD
-  CustomerKpi: any[] = [];
-=======
   a: number;
->>>>>>> 9f4a1f47ee914e17e6d7c379f6b7daefd39a7b71
+
 
   constructor(private http: HttpClient,
     private papa: Papa,
@@ -102,7 +99,7 @@ export class ScorecardPage implements OnInit {
         this.FinancialFirstType = parsedData.data.splice(5, 1);
         this.Financial = parsedData.data.splice(5, 8);
         this.FinancialType = parsedData.data.splice(10, 1);
-        this.CustomerKpi =parsedData.data.splice(42, 1)
+        
       }
     });
   }
@@ -120,8 +117,6 @@ export class ScorecardPage implements OnInit {
       }
     });
   }
-<<<<<<< HEAD
-=======
   private extractTelcoFinance(res) {
     let OPEXTarget = res || '';
 
@@ -148,5 +143,4 @@ export class ScorecardPage implements OnInit {
   }
 
 
->>>>>>> 9f4a1f47ee914e17e6d7c379f6b7daefd39a7b71
 }
