@@ -22,13 +22,24 @@ export class ScorecardPage implements OnInit {
   Financial: any[] = [];
   FinancialType: any[] = [];
   FinancialTotal: any[] = [];
+  OperationKPI: any[] = [];
+  OperationKPIType: any[] = [];
+  DigitalisationKPI: any[] = [];
   OPEXTarget: any[] = [];
   OPEXActual: any[] = [];
   CapexTarget: any[] = [];
   CapexActual: any[] = [];
+  OpertaionKPITarget: any[] = [];
+  OpertaionKPIActual: any[] = [];
   headerRow: any[] = [];
   getSelectedMonth: any;
   a: number;
+  counter = 0;
+
+  addCounter(e:number) {
+    this.counter += 1;
+    return this.counter;
+  } 
 
   constructor(private http: HttpClient,
     private papa: Papa,
@@ -38,6 +49,7 @@ export class ScorecardPage implements OnInit {
     this.Target();
     this.TelcoFinance();
     this.TelcoCAPEX();
+    this.OpsKPI();
   }
 
   ngOnInit() {
@@ -89,6 +101,15 @@ export class ScorecardPage implements OnInit {
         err => console.log('something went wrong: ', err)
       );
   }
+  private OpsKPI() {
+    this.http.get('../../assets/OpsKPI.csv', {
+      responseType: 'text'
+    })
+      .subscribe(
+        data => this.extracttOpsKPI(data),
+        err => console.log('something went wrong: ', err)
+      );
+  }
 
   private extractTarget(res) {
     let Financial = res || '';
@@ -98,7 +119,10 @@ export class ScorecardPage implements OnInit {
         // this.headerRow = parsedData.data.splice(0, 1)[0];
         this.FinancialFirstType = parsedData.data.splice(5, 1);
         this.Financial = parsedData.data.splice(5, 8);
-        this.FinancialType = parsedData.data.splice(10, 1);
+        // this.FinancialType = parsedData.data.splice(10, 1);
+        this.OperationKPI = parsedData.data.splice(6, 1);
+        this.OperationKPIType = parsedData.data.splice(7, 1);
+        this.DigitalisationKPI = parsedData.data.splice(8, 10);
       }
     });
   }
@@ -137,6 +161,17 @@ export class ScorecardPage implements OnInit {
         this.CapexTarget = parsedData.data.splice(2, 1);
         this.CapexActual = parsedData.data.splice(2, 1);
        
+      }
+    });
+  }
+  private extracttOpsKPI(res) {
+    let OpertaionKPITarget = res || '';
+
+    this.papa.parse(OpertaionKPITarget, {
+      complete: parsedData => {
+        // this.headerRow = parsedData.data.splice(0, 1)[0];
+        this.OpertaionKPITarget = parsedData.data.splice(5, 52);
+        this.OpertaionKPIActual = parsedData.data.splice(2, 1);
       }
     });
   }
