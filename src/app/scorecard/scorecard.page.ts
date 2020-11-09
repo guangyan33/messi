@@ -37,8 +37,20 @@ export class ScorecardPage implements OnInit {
   OpertaionKPITarget: any[] = [];
   OpertaionKPIActual: any[] = [];
   headerRow: any[] = [];
-  MeetRevenueTarget: any[] = [];
-  MeetRevenueActual: any[] = [];
+  SRevenueTarget: any[] = [];
+  SRevenueActual: any[] = [];
+  MRevenueTarget: any[] = [];
+  MRevenueActual: any[] = [];
+  MPTarget: any[] = [];
+  MPActual: any[] = [];
+  MOpexTarget: any[] = [];
+  MOpexActual: any[] = [];
+  MCapexTarget: any[] = [];
+  MCapexActual: any[] = [];
+  MOKPIMTarget: any[] = [];
+  MOKPIMActual: any[] = [];
+  MOKPIYTarget: any[] = [];
+  MOKPIYActual: any[] = [];
   getSelectedMonth: any;
   a: number;
   counter = 0;
@@ -202,8 +214,20 @@ export class ScorecardPage implements OnInit {
     this.papa.parse(MeetRevenueTarget, {
       complete: parsedData => {
         // this.headerRow = parsedData.data.splice(0, 1)[0];
-        this.MeetRevenueTarget = parsedData.data.splice(3, 1);
-        this.MeetRevenueActual = parsedData.data.splice(3, 1);
+        this.SRevenueTarget = parsedData.data.splice(3, 1);
+        this.SRevenueActual = parsedData.data.splice(3, 1);
+        this.MRevenueTarget = parsedData.data.splice(3, 1);
+        this.MRevenueActual = parsedData.data.splice(3, 1);
+        this.MPTarget = parsedData.data.splice(3, 1);
+        this.MPActual = parsedData.data.splice(3, 1);
+        this.MOpexTarget = parsedData.data.splice(3, 1);
+        this.MOpexActual = parsedData.data.splice(3, 1);
+        this.MCapexTarget = parsedData.data.splice(3, 1);
+        this.MCapexActual = parsedData.data.splice(3, 1);
+        this.MOKPIMTarget = parsedData.data.splice(3, 1);
+        this.MOKPIMActual = parsedData.data.splice(3, 1);
+        this.MOKPIYTarget = parsedData.data.splice(3, 1);
+        this.MOKPIYActual = parsedData.data.splice(3, 1);
       }
     });
   }
