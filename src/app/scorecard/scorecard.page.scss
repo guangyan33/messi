@@ -11,39 +11,53 @@ ion-select{
   }
   
   .data-table {
-    min-width: 50px;
+    min-width: 30px;
     min-height: 600px;
-    text-align: center;
+    td{
+        max-width: 60px;
+    }
   }
   .data-table5 {
     margin-top: -10px;
-    min-width: 50px;
+    min-width: 30px;
     min-height: 600px;
-    text-align: center;
+    td{
+        max-width: 60px;
+    }
+    
   }
   .data-table-operation {
-    min-width: 50px;
+    min-width: 30px;
     min-height: 120px;
-    text-align: center;
+    td{
+        max-width: 60px;
+    }
+    
   }
   .data-table-operation5 {
       margin-top: -10px;
-    min-width: 50px;
+    min-width: 30px;
     min-height: 120px;
-    text-align: center;
+    td{
+        max-width: 60px;
+    }
+    
   }
   .data-table-digital {
-    min-width: 50px;
+    min-width: 30px;
     min-height: 360px;
-    text-align: center;
+    td{
+        max-width: 60px;
+    }
+    
   }
  
   ion-input{
-    font-size: xx-small;
+    font-size: 1px;
   }
   
   ion-col{
-    font-size: xx-small;
+    font-size: 10px;
   }
   .TargetActual{
       margin-top: 36px;

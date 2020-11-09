@@ -5,24 +5,19 @@
     <ion-row>
       <ion-col size="4">
         <ion-item>
-          <ion-select placeholder="MM" style="width: 100" ok-text="Okay" cancel-text="Nah">
-            <ion-select-option value="dos">DOS</ion-select-option>
-            <ion-select-option value="lunix">Linux</ion-select-option>
-            <ion-select-option value="mac7">Mac OS 7</ion-select-option>
-            <ion-select-option value="mac8">Mac OS 8</ion-select-option>
-            <ion-select-option value="win3.1">Windows 3.1</ion-select-option>
-            <ion-select-option value="win95">Windows 95</ion-select-option>
-            <ion-select-option value="win98">Windows 98</ion-select-option>
+          <ion-select placeholder="MM" style="width: 100" ok-text="OK" cancel-text="Cancel">
+            <ion-select-option value="dos">Benson</ion-select-option>
+            <ion-select-option value="lunix">Vincent</ion-select-option>
+            <ion-select-option value="mac7">Emi</ion-select-option>
+            <ion-select-option value="mac8">Keith</ion-select-option>
+            <ion-select-option value="win3.1">Teck Cheong</ion-select-option>
           </ion-select>
         </ion-item>
       </ion-col>
       <ion-col size="4">
         <ion-item>
-          <ion-select placeholder="Month" style="width: 100" ok-text="Okay" cancel-text="Nah" (ionChange)="month()"
+          <ion-select placeholder="Month" style="width: 100" ok-text="OK" cancel-text="Cancel" (ionChange)="month()"
             [(ngModel)]="getSelectedMonth">
-            <ion-select-option value="1">Jan</ion-select-option>
-            <ion-select-option value="2">Feb</ion-select-option>
-            <ion-select-option value="3">Mar</ion-select-option>
             <ion-select-option value="4">Apr</ion-select-option>
             <ion-select-option value="5">May</ion-select-option>
             <ion-select-option value="6">Jun</ion-select-option>
@@ -32,12 +27,15 @@
             <ion-select-option value="10">Oct</ion-select-option>
             <ion-select-option value="11">Nov</ion-select-option>
             <ion-select-option value="12">Dec</ion-select-option>
+            <ion-select-option value="1">Jan</ion-select-option>
+            <ion-select-option value="2">Feb</ion-select-option>
+            <ion-select-option value="3">Mar</ion-select-option>
           </ion-select>
         </ion-item>
       </ion-col>
       <ion-col size="4">
         <ion-item>
-          <ion-select placeholder="Dept" style="width: 100" ok-text="Okay" cancel-text="Nah">
+          <ion-select placeholder="Dept" style="width: 100" ok-text="OK" cancel-text="Cancel">
             <ion-select-option value="dos">CDE</ion-select-option>
             <ion-select-option value="lunix">ITSS</ion-select-option>
             <ion-select-option value="mac7">SM</ion-select-option>
@@ -146,7 +144,7 @@
           </ion-col>
           <ion-col size="2">
 
-            
+
             <div *ngFor="let row of FinancialFirstType">%Total:{{row[28]}}</div>
 
             <table class="data-table5">
@@ -164,40 +162,40 @@
           </ion-col>
           <ion-col size="2">
             <div *ngIf="getSelectedMonth == '1'">
-              20 - Jan
+              Jan
             </div>
             <div *ngIf="getSelectedMonth == '2'">
-              20 - Feb
+              Feb
             </div>
             <div *ngIf="getSelectedMonth == '3'">
-              20 - Mar
+              Mar
             </div>
             <div *ngIf="getSelectedMonth == '4'">
-              20 - Apr
+              Apr
             </div>
             <div *ngIf="getSelectedMonth == '5'">
-              20 - May
+              May
             </div>
             <div *ngIf="getSelectedMonth == '6'">
-              20 - Jun
+              Jun
             </div>
             <div *ngIf="getSelectedMonth == '7'">
-              20 - Jul
+              Jul
             </div>
             <div *ngIf="getSelectedMonth == '8'">
-              20 - Aug
+              Aug
             </div>
             <div *ngIf="getSelectedMonth == '9'">
-              20 - Sep
+              Sep
             </div>
             <div *ngIf="getSelectedMonth == '10'">
-              20 - Oct
+              Oct
             </div>
             <div *ngIf="getSelectedMonth == '11'">
-              20 - Nov
+              Nov
             </div>
             <div *ngIf="getSelectedMonth == '12'">
-              20 - Dec
+              Dec
             </div>
 
             <div class="TargetActual">
@@ -625,7 +623,7 @@
               </div>
 
             </div>
-            
+
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -638,11 +636,11 @@
           </ion-item>
         </ion-card-content>
       </ion-card>
-      <ion-button expand="block" >Submit</ion-button>
-      
+      <ion-button expand="block">Submit</ion-button>
+
     </div>
 
-    
+
     <div *ngSwitchCase="'Operation'">
 
       <ion-grid>
@@ -691,7 +689,7 @@
           </ion-col>
           <ion-col size="2">
 
-           
+
             <div *ngFor="let row of OperationKPI">%Total:{{row[28]}}</div>
 
             <table class="data-table-operation5">
@@ -710,40 +708,40 @@
           </ion-col>
           <ion-col size="2">
             <div *ngIf="getSelectedMonth == '1'">
-              20 - Jan
+              Jan
             </div>
             <div *ngIf="getSelectedMonth == '2'">
-              20 - Feb
+              Feb
             </div>
             <div *ngIf="getSelectedMonth == '3'">
-              20 - Mar
+              Mar
             </div>
             <div *ngIf="getSelectedMonth == '4'">
-              20 - Apr
+              Apr
             </div>
             <div *ngIf="getSelectedMonth == '5'">
-              20 - May
+              May
             </div>
             <div *ngIf="getSelectedMonth == '6'">
-              20 - Jun
+              Jun
             </div>
             <div *ngIf="getSelectedMonth == '7'">
-              20 - Jul
+              Jul
             </div>
             <div *ngIf="getSelectedMonth == '8'">
-              20 - Aug
+              Aug
             </div>
             <div *ngIf="getSelectedMonth == '9'">
-              20 - Sep
+              Sep
             </div>
             <div *ngIf="getSelectedMonth == '10'">
-              20 - Oct
+              Oct
             </div>
             <div *ngIf="getSelectedMonth == '11'">
-              20 - Nov
+              Nov
             </div>
             <div *ngIf="getSelectedMonth == '12'">
-              20 - Dec
+              Dec
             </div>
 
             <div class="OperationTargetActual">
@@ -809,7 +807,7 @@
 
           <ion-col size="2">
             YTD
-           
+
             <div class="OperationTargetActual">
               <div *ngFor="let row of MOKPIMTarget">
                 <div *ngIf="getSelectedMonth == '1'">T :
@@ -920,7 +918,7 @@
               </div>
 
             </div>
-     
+
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -933,7 +931,7 @@
           </ion-item>
         </ion-card-content>
       </ion-card>
-      <ion-button expand="block" >Submit</ion-button>
+      <ion-button expand="block">Submit</ion-button>
     </div>
 
 
@@ -965,7 +963,7 @@
             </table>
           </ion-col>
           <ion-col size="2">
-            
+
             <div *ngFor="let row of DigitalisationKPI">
               <div *ngIf="row[28] == '20'">%Total:{{row[28]}}</div>
             </div>
@@ -977,45 +975,45 @@
           </ion-col>
           <ion-col size="2">
             <div *ngIf="getSelectedMonth == '1'">
-              20 - Jan
+              Jan
             </div>
             <div *ngIf="getSelectedMonth == '2'">
-              20 - Feb
+              Feb
             </div>
             <div *ngIf="getSelectedMonth == '3'">
-              20 - Mar
+              Mar
             </div>
             <div *ngIf="getSelectedMonth == '4'">
-              20 - Apr
+              Apr
             </div>
             <div *ngIf="getSelectedMonth == '5'">
-              20 - May
+              May
             </div>
             <div *ngIf="getSelectedMonth == '6'">
-              20 - Jun
+              Jun
             </div>
             <div *ngIf="getSelectedMonth == '7'">
-              20 - Jul
+              Jul
             </div>
             <div *ngIf="getSelectedMonth == '8'">
-              20 - Aug
+              Aug
             </div>
             <div *ngIf="getSelectedMonth == '9'">
-              20 - Sep
+              Sep
             </div>
             <div *ngIf="getSelectedMonth == '10'">
-              20 - Oct
+              Oct
             </div>
             <div *ngIf="getSelectedMonth == '11'">
-              20 - Nov
+              Nov
             </div>
             <div *ngIf="getSelectedMonth == '12'">
-              20 - Dec
+              Dec
             </div>
           </ion-col>
           <ion-col size="2">
             YTD
-            
+
 
           </ion-col>
         </ion-row>
@@ -1029,7 +1027,7 @@
           </ion-item>
         </ion-card-content>
       </ion-card>
-      <ion-button expand="block" >Submit</ion-button>
+      <ion-button expand="block">Submit</ion-button>
     </div>
 
     <div *ngSwitchCase="'Customer'">
@@ -1073,7 +1071,7 @@
           </ion-col>
           <ion-col size="2">
 
-            
+
             <div *ngFor="let row of CustomerKPI">
               <div *ngIf="row[28] == '5'">%Total:{{row[28]}}</div>
             </div>
@@ -1089,46 +1087,46 @@
           </ion-col>
           <ion-col size="2">
             <div *ngIf="getSelectedMonth == '1'">
-              20 - Jan
+              Jan
             </div>
             <div *ngIf="getSelectedMonth == '2'">
-              20 - Feb
+              Feb
             </div>
             <div *ngIf="getSelectedMonth == '3'">
-              20 - Mar
+              Mar
             </div>
             <div *ngIf="getSelectedMonth == '4'">
-              20 - Apr
+              Apr
             </div>
             <div *ngIf="getSelectedMonth == '5'">
-              20 - May
+              May
             </div>
             <div *ngIf="getSelectedMonth == '6'">
-              20 - Jun
+              Jun
             </div>
             <div *ngIf="getSelectedMonth == '7'">
-              20 - Jul
+              Jul
             </div>
             <div *ngIf="getSelectedMonth == '8'">
-              20 - Aug
+              Aug
             </div>
             <div *ngIf="getSelectedMonth == '9'">
-              20 - Sep
+              Sep
             </div>
             <div *ngIf="getSelectedMonth == '10'">
-              20 - Oct
+              Oct
             </div>
             <div *ngIf="getSelectedMonth == '11'">
-              20 - Nov
+              Nov
             </div>
             <div *ngIf="getSelectedMonth == '12'">
-              20 - Dec
+              Dec
             </div>
           </ion-col>
 
           <ion-col size="2">
             YTD
-            
+
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -1141,7 +1139,7 @@
           </ion-item>
         </ion-card-content>
       </ion-card>
-      <ion-button expand="block" >Submit</ion-button>
+      <ion-button expand="block">Submit</ion-button>
     </div>
 
     <div *ngSwitchCase="'People'">
@@ -1190,7 +1188,7 @@
           </ion-col>
           <ion-col size="2">
 
-            
+
             <div *ngFor="let row of PeopleKPI">
               <div *ngIf="row[28]">%Total:{{row[28]}}</div>
             </div>
@@ -1206,59 +1204,59 @@
           </ion-col>
           <ion-col size="2">
             <div *ngIf="getSelectedMonth == '1'">
-              20 - Jan
+              Jan
             </div>
             <div *ngIf="getSelectedMonth == '2'">
-              20 - Feb
+              Feb
             </div>
             <div *ngIf="getSelectedMonth == '3'">
-              20 - Mar
+              Mar
             </div>
             <div *ngIf="getSelectedMonth == '4'">
-              20 - Apr
+              Apr
             </div>
             <div *ngIf="getSelectedMonth == '5'">
-              20 - May
+              May
             </div>
             <div *ngIf="getSelectedMonth == '6'">
-              20 - Jun
+              Jun
             </div>
             <div *ngIf="getSelectedMonth == '7'">
-              20 - Jul
+              Jul
             </div>
             <div *ngIf="getSelectedMonth == '8'">
-              20 - Aug
+              Aug
             </div>
             <div *ngIf="getSelectedMonth == '9'">
-              20 - Sep
+              Sep
             </div>
             <div *ngIf="getSelectedMonth == '10'">
-              20 - Oct
+              Oct
             </div>
             <div *ngIf="getSelectedMonth == '11'">
-              20 - Nov
+              Nov
             </div>
             <div *ngIf="getSelectedMonth == '12'">
-              20 - Dec
+              Dec
             </div>
           </ion-col>
 
           <ion-col size="2">
             YTD
-           
+
           </ion-col>
         </ion-row>
       </ion-grid>
- <ion-card>
-    <ion-card-header>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item>
-        <ion-textarea placeholder="Please key in your comments here..."></ion-textarea>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-button expand="block" >Submit</ion-button>
+      <ion-card>
+        <ion-card-header>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-textarea placeholder="Please key in your comments here..."></ion-textarea>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+      <ion-button expand="block">Submit</ion-button>
     </div>
 
 
@@ -1308,7 +1306,7 @@
           </ion-col>
           <ion-col size="2">
 
-            
+
             <div *ngFor="let row of ProductKPI">
               <div *ngIf="row[28]">%Total:{{row[28]}}</div>
             </div>
@@ -1324,45 +1322,45 @@
           </ion-col>
           <ion-col size="2">
             <div *ngIf="getSelectedMonth == '1'">
-              20 - Jan
+              Jan
             </div>
             <div *ngIf="getSelectedMonth == '2'">
-              20 - Feb
+              Feb
             </div>
             <div *ngIf="getSelectedMonth == '3'">
-              20 - Mar
+              Mar
             </div>
             <div *ngIf="getSelectedMonth == '4'">
-              20 - Apr
+              Apr
             </div>
             <div *ngIf="getSelectedMonth == '5'">
-              20 - May
+              May
             </div>
             <div *ngIf="getSelectedMonth == '6'">
-              20 - Jun
+              Jun
             </div>
             <div *ngIf="getSelectedMonth == '7'">
-              20 - Jul
+              Jul
             </div>
             <div *ngIf="getSelectedMonth == '8'">
-              20 - Aug
+              Aug
             </div>
             <div *ngIf="getSelectedMonth == '9'">
-              20 - Sep
+              Sep
             </div>
             <div *ngIf="getSelectedMonth == '10'">
-              20 - Oct
+              Oct
             </div>
             <div *ngIf="getSelectedMonth == '11'">
-              20 - Nov
+              Nov
             </div>
             <div *ngIf="getSelectedMonth == '12'">
-              20 - Dec
+              Dec
             </div>
           </ion-col>
           <ion-col size="2">
             YTD
-            
+
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -1375,7 +1373,7 @@
           </ion-item>
         </ion-card-content>
       </ion-card>
-      <ion-button expand="block" >Submit</ion-button>
+      <ion-button expand="block">Submit</ion-button>
     </div>
   </div>
 </ion-content>
