@@ -22,13 +22,13 @@
             [(ngModel)]="getSelectedMonth">
             <ion-select-option value="1">Jan</ion-select-option>
             <ion-select-option value="2">Feb</ion-select-option>
-            <ion-select-option value="3">March</ion-select-option>
-            <ion-select-option value="4">April</ion-select-option>
+            <ion-select-option value="3">Mar</ion-select-option>
+            <ion-select-option value="4">Apr</ion-select-option>
             <ion-select-option value="5">May</ion-select-option>
             <ion-select-option value="6">June</ion-select-option>
             <ion-select-option value="7">July</ion-select-option>
-            <ion-select-option value="8">Aust</ion-select-option>
-            <ion-select-option value="9">Sept</ion-select-option>
+            <ion-select-option value="8">Aug</ion-select-option>
+            <ion-select-option value="9">Sep</ion-select-option>
             <ion-select-option value="10">Oct</ion-select-option>
             <ion-select-option value="11">Nov</ion-select-option>
             <ion-select-option value="12">Dec</ion-select-option>
@@ -164,12 +164,159 @@
           </ion-col>
           <ion-col size="2">
             20 - {{getSelectedMonth}}
+
+            <div class="TargetActual">
+              <div *ngFor="let row of SRevenueTarget">
+                <div *ngIf="getSelectedMonth == '1'">
+                  {{row[17]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">
+                  {{row[18]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">
+                  {{row[19]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">
+                  {{row[8]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">
+                  {{row[9]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">
+                  {{row[10]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">
+                  {{row[11]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">
+                  {{row[12]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">
+                  {{row[13]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">
+                  {{row[14]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">
+                  {{row[15]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">
+                  {{row[16]}}</div>
+              </div>
+
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of MRevenueTarget">
+                <div *ngIf="getSelectedMonth == '1'">
+                  {{row[17]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">
+                  {{row[18]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">
+                  {{row[19]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">
+                  {{row[8]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">
+                  {{row[9]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">
+                  {{row[10]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">
+                  {{row[11]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">
+                  {{row[12]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">
+                  {{row[13]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">
+                  {{row[14]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">
+                  {{row[15]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">
+                  {{row[16]}}</div>
+              </div>
+
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of MPTarget">
+                <div *ngIf="getSelectedMonth == '1'">
+                  {{row[17]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">
+                  {{row[18]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">
+                  {{row[19]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">
+                  {{row[8]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">
+                  {{row[9]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">
+                  {{row[10]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">
+                  {{row[11]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">
+                  {{row[12]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">
+                  {{row[13]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">
+                  {{row[14]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">
+                  {{row[15]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">
+                  {{row[16]}}</div>
+              </div>
+
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of MOpexTarget">
+                <div *ngIf="getSelectedMonth == '1'">
+                  {{row[17]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">
+                  {{row[18]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">
+                  {{row[19]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">
+                  {{row[8]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">
+                  {{row[9]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">
+                  {{row[10]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">
+                  {{row[11]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">
+                  {{row[12]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">
+                  {{row[13]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">
+                  {{row[14]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">
+                  {{row[15]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">
+                  {{row[16]}}</div>
+              </div>
+
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of MCapexTarget">
+                <div *ngIf="getSelectedMonth == '1'">
+                  {{row[17]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">
+                  {{row[18]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">
+                  {{row[19]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">
+                  {{row[8]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">
+                  {{row[9]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">
+                  {{row[10]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">
+                  {{row[11]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">
+                  {{row[12]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">
+                  {{row[13]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">
+                  {{row[14]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">
+                  {{row[15]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">
+                  {{row[16]}}</div>
+              </div>
+
+            </div>
+
           </ion-col>
 
           <ion-col size="2">
             20 - {{getSelectedMonth}}
             <div class="TargetActual">
-              <div *ngFor="let row of MeetRevenueTarget">
+              <div *ngFor="let row of SRevenueTarget">
                 <div *ngIf="getSelectedMonth == '1'">T :
                   {{row[31]}}</div>
                 <div *ngIf="getSelectedMonth == '2'">T :
@@ -195,54 +342,255 @@
                 <div *ngIf="getSelectedMonth == '12'">T :
                   {{row[30]}}</div>
               </div>
-              <div *ngFor="let row of MeetRevenueActual">
-                <div *ngIf="getSelectedMonth == '1'">T :
+              <div *ngFor="let row of SRevenueActual">
+                <div *ngIf="getSelectedMonth == '1'">A :
                   {{row[31]}}</div>
-                <div *ngIf="getSelectedMonth == '2'">T :
+                <div *ngIf="getSelectedMonth == '2'">A :
                   {{row[32]}}</div>
-                <div *ngIf="getSelectedMonth == '3'">T :
+                <div *ngIf="getSelectedMonth == '3'">A :
                   {{row[33]}}</div>
-                <div *ngIf="getSelectedMonth == '4'">T :
+                <div *ngIf="getSelectedMonth == '4'">A :
                   {{row[22]}}</div>
-                <div *ngIf="getSelectedMonth == '5'">T :
+                <div *ngIf="getSelectedMonth == '5'">A :
                   {{row[23]}}</div>
-                <div *ngIf="getSelectedMonth == '6'">T :
+                <div *ngIf="getSelectedMonth == '6'">A :
                   {{row[24]}}</div>
-                <div *ngIf="getSelectedMonth == '7'">T :
+                <div *ngIf="getSelectedMonth == '7'">A :
                   {{row[25]}}</div>
-                <div *ngIf="getSelectedMonth == '8'">T :
+                <div *ngIf="getSelectedMonth == '8'">A :
                   {{row[26]}}</div>
-                <div *ngIf="getSelectedMonth == '9'">T :
+                <div *ngIf="getSelectedMonth == '9'">A :
                   {{row[27]}}</div>
-                <div *ngIf="getSelectedMonth == '10'">T :
+                <div *ngIf="getSelectedMonth == '10'">A :
                   {{row[28]}}</div>
-                <div *ngIf="getSelectedMonth == '11'">T :
+                <div *ngIf="getSelectedMonth == '11'">A :
                   {{row[29]}}</div>
-                <div *ngIf="getSelectedMonth == '12'">T :
+                <div *ngIf="getSelectedMonth == '12'">A :
                   {{row[30]}}</div>
               </div>
 
             </div>
             <div class="TargetActual">
-              <div *ngFor="let row of MeetRevenueTA">
-                {{row[3]}}</div>
+              <div *ngFor="let row of MRevenueTarget">
+                <div *ngIf="getSelectedMonth == '1'">T :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">T :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">T :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">T :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">T :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">T :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">T :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">T :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">T :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">T :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">T :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">T :
+                  {{row[30]}}</div>
+              </div>
+              <div *ngFor="let row of MRevenueTarget">
+                <div *ngIf="getSelectedMonth == '1'">A :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">A :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">A :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">A :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">A :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">A :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">A :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">A :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">A :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">A :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">A :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">A :
+                  {{row[30]}}</div>
+              </div>
+
             </div>
             <div class="TargetActual">
-              <div *ngFor="let row of MeetRevenueTA">
-                {{row[3]}}</div>
+              <div *ngFor="let row of MPTarget">
+                <div *ngIf="getSelectedMonth == '1'">T :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">T :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">T :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">T :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">T :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">T :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">T :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">T :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">T :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">T :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">T :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">T :
+                  {{row[30]}}</div>
+              </div>
+              <div *ngFor="let row of MPActual">
+                <div *ngIf="getSelectedMonth == '1'">A :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">A :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">A :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">A :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">A :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">A :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">A :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">A :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">A :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">A :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">A :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">A :
+                  {{row[30]}}</div>
+              </div>
+
             </div>
             <div class="TargetActual">
-              <div *ngFor="let row of OPEXTarget">T :
-                {{(row[5])}}</div>
-              <div *ngFor="let row of OPEXActual">A :
-                {{row[5]}}</div>
+              <div *ngFor="let row of MOpexTarget">
+                <div *ngIf="getSelectedMonth == '1'">T :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">T :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">T :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">T :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">T :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">T :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">T :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">T :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">T :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">T :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">T :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">T :
+                  {{row[30]}}</div>
+              </div>
+              <div *ngFor="let row of MOpexActual">
+                <div *ngIf="getSelectedMonth == '1'">A :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">A :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">A :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">A :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">A :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">A :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">A :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">A :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">A :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">A :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">A :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">A :
+                  {{row[30]}}</div>
+              </div>
+
             </div>
             <div class="TargetActual">
-              <div *ngFor="let row of CapexTarget">T :
-                {{(row[5])}}</div>
-              <div *ngFor="let row of CapexActual">A :
-                {{row[5]}}</div>
+              <div *ngFor="let row of MCapexTarget">
+                <div *ngIf="getSelectedMonth == '1'">T :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">T :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">T :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">T :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">T :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">T :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">T :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">T :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">T :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">T :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">T :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">T :
+                  {{row[30]}}</div>
+              </div>
+              <div *ngFor="let row of MCapexActual">
+                <div *ngIf="getSelectedMonth == '1'">A :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">A :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">A :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">A :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">A :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">A :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">A :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">A :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">A :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">A :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">A :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">A :
+                  {{row[30]}}</div>
+              </div>
+
             </div>
+            
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -309,23 +657,182 @@
           </ion-col>
           <ion-col size="2">
             20 - {{getSelectedMonth}}
+
+            <div class="OperationTargetActual">
+              <div *ngFor="let row of MOKPIMTarget">
+                <div *ngIf="getSelectedMonth == '1'">
+                  {{row[17]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">
+                  {{row[18]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">
+                  {{row[19]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">
+                  {{row[8]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">
+                  {{row[9]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">
+                  {{row[10]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">
+                  {{row[11]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">
+                  {{row[12]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">
+                  {{row[13]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">
+                  {{row[14]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">
+                  {{row[15]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">
+                  {{row[16]}}</div>
+              </div>
+
+            </div>
+            <div class="OperationTargetActual">
+              <div *ngFor="let row of MOKPIYTarget">
+                <div *ngIf="getSelectedMonth == '1'">
+                  {{row[17]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">
+                  {{row[18]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">
+                  {{row[19]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">
+                  {{row[8]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">
+                  {{row[9]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">
+                  {{row[10]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">
+                  {{row[11]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">
+                  {{row[12]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">
+                  {{row[13]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">
+                  {{row[14]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">
+                  {{row[15]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">
+                  {{row[16]}}</div>
+              </div>
+
+            </div>
+
           </ion-col>
 
           <ion-col size="2">
             20 - {{getSelectedMonth}}
-            <!-- <div class="TargetActual"> -->
-
-            <div *ngFor="let row of OpertaionKPITarget; let i = index">
-              <div *ngIf="row[7] === '% (A)' || row[7] === '# (M)'" (ionChange)="addCounter()">T :
-                row{{i}}
+           
+            <div class="OperationTargetActual">
+              <div *ngFor="let row of MOKPIMTarget">
+                <div *ngIf="getSelectedMonth == '1'">T :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">T :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">T :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">T :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">T :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">T :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">T :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">T :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">T :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">T :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">T :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">T :
+                  {{row[30]}}</div>
               </div>
+              <div *ngFor="let row of MOKPIMActual">
+                <div *ngIf="getSelectedMonth == '1'">A :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">A :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">A :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">A :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">A :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">A :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">A :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">A :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">A :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">A :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">A :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">A :
+                  {{row[30]}}</div>
+              </div>
+
             </div>
+            <div class="OperationTargetActual">
+              <div *ngFor="let row of MOKPIYTarget">
+                <div *ngIf="getSelectedMonth == '1'">T :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">T :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">T :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">T :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">T :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">T :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">T :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">T :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">T :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">T :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">T :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">T :
+                  {{row[30]}}</div>
+              </div>
+              <div *ngFor="let row of MOKPIYActual">
+                <div *ngIf="getSelectedMonth == '1'">A :
+                  {{row[31]}}</div>
+                <div *ngIf="getSelectedMonth == '2'">A :
+                  {{row[32]}}</div>
+                <div *ngIf="getSelectedMonth == '3'">A :
+                  {{row[33]}}</div>
+                <div *ngIf="getSelectedMonth == '4'">A :
+                  {{row[22]}}</div>
+                <div *ngIf="getSelectedMonth == '5'">A :
+                  {{row[23]}}</div>
+                <div *ngIf="getSelectedMonth == '6'">A :
+                  {{row[24]}}</div>
+                <div *ngIf="getSelectedMonth == '7'">A :
+                  {{row[25]}}</div>
+                <div *ngIf="getSelectedMonth == '8'">A :
+                  {{row[26]}}</div>
+                <div *ngIf="getSelectedMonth == '9'">A :
+                  {{row[27]}}</div>
+                <div *ngIf="getSelectedMonth == '10'">A :
+                  {{row[28]}}</div>
+                <div *ngIf="getSelectedMonth == '11'">A :
+                  {{row[29]}}</div>
+                <div *ngIf="getSelectedMonth == '12'">A :
+                  {{row[30]}}</div>
+              </div>
 
-            <div>{{counter}}</div>
-            <div *ngFor="let row of RevenueActual">A :
-              {{(row[4] - row[16] - row[15] - row[14] - row[13] - row[12] - row[11])}}</div>
-            <!-- </div> -->
-
+            </div>
+     
           </ion-col>
         </ion-row>
       </ion-grid>
