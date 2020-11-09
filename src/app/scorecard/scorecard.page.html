@@ -38,13 +38,22 @@
       <ion-col size="4">
         <ion-item>
           <ion-select placeholder="Dept" style="width: 100" ok-text="Okay" cancel-text="Nah">
-            <ion-select-option value="dos">DOS</ion-select-option>
-            <ion-select-option value="lunix">Linux</ion-select-option>
-            <ion-select-option value="mac7">Mac OS 7</ion-select-option>
-            <ion-select-option value="mac8">Mac OS 8</ion-select-option>
-            <ion-select-option value="win3.1">Windows 3.1</ion-select-option>
-            <ion-select-option value="win95">Windows 95</ion-select-option>
-            <ion-select-option value="win98">Windows 98</ion-select-option>
+            <ion-select-option value="dos">CDE</ion-select-option>
+            <ion-select-option value="lunix">ITSS</ion-select-option>
+            <ion-select-option value="mac7">SM</ion-select-option>
+            <ion-select-option value="mac8">CDO</ion-select-option>
+            <ion-select-option value="win3.1">Nwk Ops + Sys Ops</ion-select-option>
+            <ion-select-option value="win95">TAC</ion-select-option>
+            <ion-select-option value="win98">SGO</ion-select-option>
+            <ion-select-option value="win98">CC</ion-select-option>
+            <ion-select-option value="win98">SATOps</ion-select-option>
+            <ion-select-option value="win98">PM</ion-select-option>
+            <ion-select-option value="win98">CSS</ion-select-option>
+            <ion-select-option value="win98">GSP</ion-select-option>
+            <ion-select-option value="win98">DSS</ion-select-option>
+            <ion-select-option value="win98">GD/BOS</ion-select-option>
+            <ion-select-option value="win98">GEIM</ion-select-option>
+            <ion-select-option value="win98">GD/DSS</ion-select-option>
           </ion-select>
         </ion-item>
       </ion-col>
@@ -350,48 +359,259 @@
 
     </div>
     <div *ngSwitchCase="'Customer'">
-      customer
-    </div>
-    <div *ngSwitchCase="'People'">
-      people
-    </div>
-    <div *ngSwitchCase="'Products'">
+
       <ion-grid>
         <ion-row>
           <ion-col size="2">
             KPI
-            <table border="1" class="data-table">
-              <tr *ngFor="let row of DigitalisationKPI">
+
+            <table border="1" class="data-table-operation">
+              <tr *ngFor="let row of CustomerKPI">
+
                 <td>{{row[2]}}</td>
+
               </tr>
+
+
             </table>
+
           </ion-col>
           <ion-col size="2">
             Target
-            <table class="data-table">
-              <tr *ngFor="let row of DigitalisationKPI">
-                <td *ngIf="row[3]">{{row[3]}}</td>
+
+            <table border="1" class="data-table-operation">
+
+              <tr *ngFor="let row of OpertaionKPITarget">
+                <td *ngIf="row[3] == 'Non-contractual Customer CE '">{{row[3]}}</td>
+
               </tr>
+
             </table>
+
+
           </ion-col>
           <ion-col size="2">
             Type
-            <table class="data-table">
-              <tr *ngFor="let row of DigitalisationKPI">
+
+            <table class="data-table-operation">
+              <tr *ngFor="let row of CustomerKPI">
                 <td *ngIf="row[4]">{{row[4]}}</td>
+
               </tr>
+
             </table>
+
           </ion-col>
           <ion-col size="2">
+
             %
-            <div *ngFor="let row of DigitalisationKPI">
-              <div *ngIf="row[28] == '20'">Total:{{row[28]}}</div>
+            <div *ngFor="let row of CustomerKPI">
+              <div *ngIf="row[28] == '5'">Total:{{row[28]}}</div>
             </div>
-            <table border="1" class="data-table-digital">
-              <tr *ngFor="let row of DigitalisationKPI">
+
+            <table border="1" class="data-table-operation">
+              <tr *ngFor="let row of Customerpercentage">
                 <td *ngIf="row[29]">{{row[29]}}</td>
+
               </tr>
+
             </table>
+
+          </ion-col>
+          <ion-col size="2">
+            20 - {{getSelectedMonth}}
+          </ion-col>
+
+          <ion-col size="2">
+            20 - {{getSelectedMonth}}
+            <div class="TargetActual">
+              <div *ngFor="let row of RevenueData">T :
+                {{(row[4] - row[16] - row[15] - row[14] - row[13] - row[12] - row[11])}}</div>
+              <div *ngFor="let row of RevenueActual">A :
+                {{(row[4] - row[16] - row[15] - row[14] - row[13] - row[12] - row[11])}}</div>
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of MeetRevenueTA">
+                {{row[3]}}</div>
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of MeetRevenueTA">
+                {{row[3]}}</div>
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of OPEXTarget">T :
+                {{(row[5])}}</div>
+              <div *ngFor="let row of OPEXActual">A :
+                {{row[5]}}</div>
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of CapexTarget">T :
+                {{(row[5])}}</div>
+              <div *ngFor="let row of CapexActual">A :
+                {{row[5]}}</div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+    </div>
+    <div *ngSwitchCase="'People'">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2">
+            KPI
+
+            <table border="1" class="data-table-operation">
+              <tr *ngFor="let row of PeopleKPI">
+
+                <td>{{row[2]}}</td>
+
+              </tr>
+
+
+            </table>
+
+          </ion-col>
+          <ion-col size="2">
+            Target
+
+            <table border="1" class="data-table-operation">
+
+              <tr *ngFor="let row of PeopleKPI">
+                <td *ngIf="row[3]">{{row[3]}}</td>
+
+              </tr>
+
+            </table>
+
+
+          </ion-col>
+          <ion-col size="2">
+            Type
+
+            <table class="data-table-operation">
+              <tr *ngFor="let row of PeopleKPI">
+                <td *ngIf="row[4]">{{row[4]}}</td>
+
+              </tr>
+
+            </table>
+
+          </ion-col>
+          <ion-col size="2">
+
+            %
+            <div *ngFor="let row of PeopleKPI">
+              <div *ngIf="row[28]">Total:{{row[28]}}</div>
+            </div>
+
+            <table border="1" class="data-table-operation">
+              <tr *ngFor="let row of PeopleKPI">
+                <td *ngIf="row[29]">{{row[29]}}</td>
+
+              </tr>
+
+            </table>
+
+          </ion-col>
+          <ion-col size="2">
+            20 - {{getSelectedMonth}}
+          </ion-col>
+
+          <ion-col size="2">
+            20 - {{getSelectedMonth}}
+            <div class="TargetActual">
+              <div *ngFor="let row of RevenueData">T :
+                {{(row[4] - row[16] - row[15] - row[14] - row[13] - row[12] - row[11])}}</div>
+              <div *ngFor="let row of RevenueActual">A :
+                {{(row[4] - row[16] - row[15] - row[14] - row[13] - row[12] - row[11])}}</div>
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of MeetRevenueTA">
+                {{row[3]}}</div>
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of MeetRevenueTA">
+                {{row[3]}}</div>
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of OPEXTarget">T :
+                {{(row[5])}}</div>
+              <div *ngFor="let row of OPEXActual">A :
+                {{row[5]}}</div>
+            </div>
+            <div class="TargetActual">
+              <div *ngFor="let row of CapexTarget">T :
+                {{(row[5])}}</div>
+              <div *ngFor="let row of CapexActual">A :
+                {{row[5]}}</div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+    <div *ngSwitchCase="'Products'">
+      
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2">
+            KPI
+
+            <table border="1" class="data-table-operation">
+              <tr *ngFor="let row of ProductKPI">
+
+                <td>{{row[2]}}</td>
+
+              </tr>
+
+
+            </table>
+
+          </ion-col>
+          <ion-col size="2">
+            Target
+
+            <table border="1" class="data-table-operation">
+
+              <tr *ngFor="let row of ProductKPI">
+                <td *ngIf="row[3]">{{row[3]}}</td>
+
+              </tr>
+
+            </table>
+
+
+          </ion-col>
+          <ion-col size="2">
+            Type
+
+            <table class="data-table-operation">
+              <tr *ngFor="let row of ProductKPI">
+                <td *ngIf="row[4]">{{row[4]}}</td>
+
+              </tr>
+
+            </table>
+
+          </ion-col>
+          <ion-col size="2">
+
+            %
+            <div *ngFor="let row of ProductKPI">
+              <div *ngIf="row[28]">Total:{{row[28]}}</div>
+            </div>
+
+            <table border="1" class="data-table-operation">
+              <tr *ngFor="let row of ProductKPI">
+                <td *ngIf="row[29]">{{row[29]}}</td>
+
+              </tr>
+
+            </table>
+
           </ion-col>
           <ion-col size="2">
             20 - {{getSelectedMonth}}

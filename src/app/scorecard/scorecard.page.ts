@@ -25,6 +25,11 @@ export class ScorecardPage implements OnInit {
   OperationKPI: any[] = [];
   OperationKPIType: any[] = [];
   DigitalisationKPI: any[] = [];
+  CustomerKPI: any[] = [];
+  CustomerTarget: any[] = [];
+  Customerpercentage: any[] = [];
+  PeopleKPI: any[] = [];
+  ProductKPI: any[] = [];
   OPEXTarget: any[] = [];
   OPEXActual: any[] = [];
   CapexTarget: any[] = [];
@@ -123,6 +128,10 @@ export class ScorecardPage implements OnInit {
         this.OperationKPI = parsedData.data.splice(6, 1);
         this.OperationKPIType = parsedData.data.splice(7, 1);
         this.DigitalisationKPI = parsedData.data.splice(8, 10);
+        this.CustomerKPI = parsedData.data.splice(8, 1);
+        this.Customerpercentage = parsedData.data.splice(19, 1);
+        this.PeopleKPI = parsedData.data.splice(19, 2);
+        this.ProductKPI = parsedData.data.splice(19, 1);
       }
     });
   }
@@ -171,6 +180,7 @@ export class ScorecardPage implements OnInit {
         // this.headerRow = parsedData.data.splice(0, 1)[0];
         this.OpertaionKPITarget = parsedData.data.splice(5, 52);
         this.OpertaionKPIActual = parsedData.data.splice(2, 1);
+        this.CustomerTarget = parsedData.data.splice(2, 20);
       }
     });
   }
