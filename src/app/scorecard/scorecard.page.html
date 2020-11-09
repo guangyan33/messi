@@ -25,8 +25,8 @@
             <ion-select-option value="3">Mar</ion-select-option>
             <ion-select-option value="4">Apr</ion-select-option>
             <ion-select-option value="5">May</ion-select-option>
-            <ion-select-option value="6">June</ion-select-option>
-            <ion-select-option value="7">July</ion-select-option>
+            <ion-select-option value="6">Jun</ion-select-option>
+            <ion-select-option value="7">Jul</ion-select-option>
             <ion-select-option value="8">Aug</ion-select-option>
             <ion-select-option value="9">Sep</ion-select-option>
             <ion-select-option value="10">Oct</ion-select-option>
@@ -146,8 +146,8 @@
           </ion-col>
           <ion-col size="2">
 
-            %
-            <div *ngFor="let row of FinancialFirstType">Total:{{row[28]}}</div>
+            
+            <div *ngFor="let row of FinancialFirstType">%Total:{{row[28]}}</div>
 
             <table class="data-table">
               <tr *ngFor="let row of FinancialFirstType">
@@ -163,7 +163,42 @@
 
           </ion-col>
           <ion-col size="2">
-            20 - {{getSelectedMonth}}
+            <div *ngIf="getSelectedMonth == '1'">
+              20 - Jan
+            </div>
+            <div *ngIf="getSelectedMonth == '2'">
+              20 - Feb
+            </div>
+            <div *ngIf="getSelectedMonth == '3'">
+              20 - Mar
+            </div>
+            <div *ngIf="getSelectedMonth == '4'">
+              20 - Apr
+            </div>
+            <div *ngIf="getSelectedMonth == '5'">
+              20 - May
+            </div>
+            <div *ngIf="getSelectedMonth == '6'">
+              20 - Jun
+            </div>
+            <div *ngIf="getSelectedMonth == '7'">
+              20 - Jul
+            </div>
+            <div *ngIf="getSelectedMonth == '8'">
+              20 - Aug
+            </div>
+            <div *ngIf="getSelectedMonth == '9'">
+              20 - Sep
+            </div>
+            <div *ngIf="getSelectedMonth == '10'">
+              20 - Oct
+            </div>
+            <div *ngIf="getSelectedMonth == '11'">
+              20 - Nov
+            </div>
+            <div *ngIf="getSelectedMonth == '12'">
+              20 - Dec
+            </div>
 
             <div class="TargetActual">
               <div *ngFor="let row of SRevenueTarget">
@@ -314,7 +349,7 @@
           </ion-col>
 
           <ion-col size="2">
-            20 - {{getSelectedMonth}}
+            YTD
             <div class="TargetActual">
               <div *ngFor="let row of SRevenueTarget">
                 <div *ngIf="getSelectedMonth == '1'">T :
@@ -644,19 +679,60 @@
           </ion-col>
           <ion-col size="2">
 
-            %
-            <div *ngFor="let row of OperationKPI">Total:{{row[28]}}</div>
+           
+            <div *ngFor="let row of OperationKPI">%Total:{{row[28]}}</div>
 
-            <table class="data-table">
-              <tr *ngFor="let row of FinancialFirstType">
-                <td *ngIf="row[29]">{{row[29]}}</td>
+            <table class="data-table-operation">
+              <tr *ngFor="let row of MOKPIMTarget">
+                <td *ngIf="row[7]">{{row[7]}}</td>
+
+              </tr>
+
+              <tr *ngFor="let row of MOKPIYTarget">
+                <td *ngIf="row[7]">{{row[7]}}</td>
 
               </tr>
             </table>
 
+
           </ion-col>
           <ion-col size="2">
-            20 - {{getSelectedMonth}}
+            <div *ngIf="getSelectedMonth == '1'">
+              20 - Jan
+            </div>
+            <div *ngIf="getSelectedMonth == '2'">
+              20 - Feb
+            </div>
+            <div *ngIf="getSelectedMonth == '3'">
+              20 - Mar
+            </div>
+            <div *ngIf="getSelectedMonth == '4'">
+              20 - Apr
+            </div>
+            <div *ngIf="getSelectedMonth == '5'">
+              20 - May
+            </div>
+            <div *ngIf="getSelectedMonth == '6'">
+              20 - Jun
+            </div>
+            <div *ngIf="getSelectedMonth == '7'">
+              20 - Jul
+            </div>
+            <div *ngIf="getSelectedMonth == '8'">
+              20 - Aug
+            </div>
+            <div *ngIf="getSelectedMonth == '9'">
+              20 - Sep
+            </div>
+            <div *ngIf="getSelectedMonth == '10'">
+              20 - Oct
+            </div>
+            <div *ngIf="getSelectedMonth == '11'">
+              20 - Nov
+            </div>
+            <div *ngIf="getSelectedMonth == '12'">
+              20 - Dec
+            </div>
 
             <div class="OperationTargetActual">
               <div *ngFor="let row of MOKPIMTarget">
@@ -867,9 +943,9 @@
             </table>
           </ion-col>
           <ion-col size="2">
-            %
+            
             <div *ngFor="let row of DigitalisationKPI">
-              <div *ngIf="row[28] == '20'">Total:{{row[28]}}</div>
+              <div *ngIf="row[28] == '20'">%Total:{{row[28]}}</div>
             </div>
             <table border="1" class="data-table-digital">
               <tr *ngFor="let row of DigitalisationKPI">
@@ -960,9 +1036,9 @@
           </ion-col>
           <ion-col size="2">
 
-            %
+            
             <div *ngFor="let row of CustomerKPI">
-              <div *ngIf="row[28] == '5'">Total:{{row[28]}}</div>
+              <div *ngIf="row[28] == '5'">%Total:{{row[28]}}</div>
             </div>
 
             <table border="1" class="data-table-operation">
@@ -1058,9 +1134,9 @@
           </ion-col>
           <ion-col size="2">
 
-            %
+            
             <div *ngFor="let row of PeopleKPI">
-              <div *ngIf="row[28]">Total:{{row[28]}}</div>
+              <div *ngIf="row[28]">%Total:{{row[28]}}</div>
             </div>
 
             <table border="1" class="data-table-operation">
@@ -1155,9 +1231,9 @@
           </ion-col>
           <ion-col size="2">
 
-            %
+            
             <div *ngFor="let row of ProductKPI">
-              <div *ngIf="row[28]">Total:{{row[28]}}</div>
+              <div *ngIf="row[28]">%Total:{{row[28]}}</div>
             </div>
 
             <table border="1" class="data-table-operation">
