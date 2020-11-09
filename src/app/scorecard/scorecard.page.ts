@@ -38,6 +38,7 @@ export class ScorecardPage implements OnInit {
   OpertaionKPIActual: any[] = [];
   headerRow: any[] = [];
   MeetRevenueTarget: any[] = [];
+  MeetRevenueActual: any[] = [];
   getSelectedMonth: any;
   a: number;
   counter = 0;
@@ -202,7 +203,7 @@ export class ScorecardPage implements OnInit {
       complete: parsedData => {
         // this.headerRow = parsedData.data.splice(0, 1)[0];
         this.MeetRevenueTarget = parsedData.data.splice(3, 1);
-        this.MeetRevenueTarget = parsedData.data.splice(3, 1);
+        this.MeetRevenueActual = parsedData.data.splice(3, 1);
       }
     });
   }
