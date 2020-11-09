@@ -1,0 +1,51 @@
+,,,,,,,,1,2,3,4,5,6,7,8,9,10,11,12,,,,,,,,,,,,,,,
+,DCIO,,,3,,Benson,,Apr-20,May-20,Jun-20,Jul-20,Aug-20,Sep-20,Oct-20,Nov-20,Dec-20,Jan-21,Feb-21,Mar-21,,,Apr-20,May-20,Jun-20,Jul-20,Aug-20,Sep-20,Oct-20,Nov-20,Dec-20,Jan-21,Feb-21,Mar-21,Remarks
+HR Central Category,Category,KPI,Target,Type,,Total,%,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Financial & Operational,,Support Revenue,Hosting,M,,30,5,,,5,,,5,,,,,,,,T,18.35,36.58,55.00,73.35,91.58,110.00,384.86,769.72,1539.44,3078.87,6157.74,12315.49,FY21 Budget: $231.01m
+,,,,,,,,,,,,,,,,,,,,,A,18.62,38.07,57.47,76.09,95.54,114.94,400.75,801.49,1602.99,3205.98,6411.96,12823.91,
+,,Meet Revenue,"Department specific, CDE and TS",M,,,,,,,,,,,,,,,,,T,,,,,,,,,,,,,NA
+,,,,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+,Financial,Meet Project P&L (Project Cost),"Department specific, CDE and TS",M,,,,,,,,,,,,,,,,,T,,,,,,,,,,,,,NA
+,,,,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+,DCIOOPEX (S$)Budget,Meet Opex,"Department specific, all",M,,,15,,,15,,,15,,,,,,,,T,4.386,8.590,13.14,18.22,22.67,27.35,31.88,35.74,40.13,45.05,49.14,53.28,FY21 Budget: $53.28m
+,DCIOOPEX (S$)Actual,,,,,,,,,,,,,,,,,,,,A,4.072,8.054,12.08,16.86,21.05,24.95,87.06,170.05,332.05,652.02,1287.18,2553.31,
+,DCIOCAPEX (S$)Budget,Meet Capex,"Department specific, all",M,,,10,,,10,,,10,,,,,,,,T,16.22,26.09,30.00,39.65,42.44,46.72,52.93,55.71,58.93,68.17,69.65,75.60,FY21 Budget: $75.60m
+,DCIOCAPEX (S$)Actual,,,,,,,,,,,,,,,,,,,,A,23.71,23.84,25.15,28.82,31.14,32.89,165.55,307.39,590.94,1156.72,2284.63,4538.12,
+Business - Finacial & Operational,Operations,Meet Operations KPI ,Department specific in BPR,M,,15,5.25,,,4.64,,,4.88,,,,,,,,T,14,14,14,14,14,14,14,14,14,14,14,14,"14 Monthly KPI, 26 Yearly KPI"
+,,,,,,,,,,,,,,,,,,,,,A,13,13,13,3,3,13,2,2,2,2,2,2,
+,,,,Y,,,9.75,,,0.00,,,0.00,,,,,,,,T,0,0,0,0,0,0,0,0,6,1,0,21,
+,,,,,,,,,,,,,,,,,,,,,A,0,0,0,0,0,0,0,0,0,0,0,0,
+Business - Innovation,Digitalisation,Deliver SMART Projects,Deliver projects registered with DSS,Y,,20,10,,,,,,,,,,,,,,T,,,,,,,,,,,,8,"Target: 8 (Centralized NOC, Self-Service Portal, DC Utility - KC1, DC Utility - KC2, Visitor self service kiosk, Modular UPS Deployment, EMS system consolidation and migration, Smart Security Tender), Benefits: $1.094m"
+,,,,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+,,Deliver Agile squads,"Implement agile squads for P2O, O2P, Networks, Systems and Digital Projects",Y,,,,,,,,,,,,,,,,,T,,,,,,,,,,,,,NA
+,,,,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+,,Meet Digitalised Trans,Customer 20%,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+,,,Provisioning 27%,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+,,,Operations 65%,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+,,,Datacentre 35%,Y,,,10,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+,,,Quality 25%,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+,,,Security 27%,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+Business - Customer Experience,Customer,Meet CE Targets,Non-contractual Customer CE DCIO,Y,,5,5,,,,,,,,,,,,,,T,,,,,,,,,,80%,,,FY21 Target: 80%
+,,,,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+People - Employee Engagement,People,Meet Engagement Score,SEB Target 58,Y,,10,5,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+,,Meet Sentiment Score,SEB Target 80,Y,,,5,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+Business - Innovation,Products,Support Productisation ,Support product management functions and meet product launches,Y,,20,20,,,,,,,,,,,,,,T,,,,,,,,,,,,3,"DCW2 1) Complete technical study and design by appointed consultants by Q2 FY21
+2) MC/Board Approval for new CLS DC development by Q3 (T)
+3) Execute land allocation from JTC by T+3mths"
+,,,,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,
+,,,,,,100,100,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,YTD,,,,,,,,,,,,,,,,,,,,,
+,,,Monthly (M)  ,,,Target (T),,,,35.00,,,35.25,,,,,,,,,,,,,,,,,,,,,
+,,,,,,Actual (A),,,,34.64,,,34.88,,,,,,,,,,,,,,,,,,,,,
+,,,Yearly (Y)  ,,,Target (T),,,,65.00,,,64.75,,,,,,,,,,,,,,,,,,,,,
+,,,,,,Actual (A),,,,0.00,,,0.00,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Financial & Operational,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Innovation,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Process,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Strategy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Customer Experience,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Business - Other,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+People - Employee Engagement,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+People - Talent Development,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+People - Other,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

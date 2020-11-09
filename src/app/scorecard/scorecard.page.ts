@@ -37,6 +37,7 @@ export class ScorecardPage implements OnInit {
   OpertaionKPITarget: any[] = [];
   OpertaionKPIActual: any[] = [];
   headerRow: any[] = [];
+  MeetRevenueTarget: any[] = [];
   getSelectedMonth: any;
   a: number;
   counter = 0;
@@ -55,6 +56,7 @@ export class ScorecardPage implements OnInit {
     this.TelcoFinance();
     this.TelcoCAPEX();
     this.OpsKPI();
+    this.ScoreCard();
   }
 
   ngOnInit() {
@@ -112,6 +114,15 @@ export class ScorecardPage implements OnInit {
     })
       .subscribe(
         data => this.extracttOpsKPI(data),
+        err => console.log('something went wrong: ', err)
+      );
+  }
+  private ScoreCard() {
+    this.http.get('../../assets/Scorecard.csv', {
+      responseType: 'text'
+    })
+      .subscribe(
+        data => this.extracttScoreCard(data),
         err => console.log('something went wrong: ', err)
       );
   }
@@ -182,6 +193,16 @@ export class ScorecardPage implements OnInit {
         this.OpertaionKPITarget = parsedData.data.splice(5, 52);
         this.OpertaionKPIActual = parsedData.data.splice(2, 1);
         this.CustomerTarget = parsedData.data.splice(2, 20);
+      }
+    });
+  }
+  private extracttScoreCard(res) {
+    let MeetRevenueTarget = res || '';
+
+    this.papa.parse(MeetRevenueTarget, {
+      complete: parsedData => {
+        // this.headerRow = parsedData.data.splice(0, 1)[0];
+        this.MeetRevenueTarget = parsedData.data.splice(3, 1);
       }
     });
   }

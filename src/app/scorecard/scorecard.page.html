@@ -164,10 +164,11 @@
           <ion-col size="2">
             20 - {{getSelectedMonth}}
             <div class="TargetActual">
-              <div *ngFor="let row of RevenueData">T :
-                {{(row[4] - row[16] - row[15] - row[14] - row[13] - row[12] - row[11])}}</div>
-              <div *ngFor="let row of RevenueActual">A :
-                {{(row[4] - row[16] - row[15] - row[14] - row[13] - row[12] - row[11])}}</div>
+              <div *ngFor="let row of MeetRevenueTarget">
+                <div *ngIf="getSelectedMonth == '9'">T :
+                  {{row[27]}}</div>
+              </div>
+
             </div>
             <div class="TargetActual">
               <div *ngFor="let row of MeetRevenueTA">
@@ -572,7 +573,7 @@
 
     </div>
     <div *ngSwitchCase="'Products'">
-      
+
       <ion-grid>
         <ion-row>
           <ion-col size="2">
