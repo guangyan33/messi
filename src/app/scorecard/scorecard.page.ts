@@ -47,6 +47,7 @@ export class ScorecardPage implements OnInit {
     return this.counter;
   } 
 
+
   constructor(private http: HttpClient,
     private papa: Papa,
     private plt: Platform,
@@ -129,7 +130,6 @@ export class ScorecardPage implements OnInit {
 
   private extractTarget(res) {
     let Financial = res || '';
-
     this.papa.parse(Financial, {
       complete: parsedData => {
         // this.headerRow = parsedData.data.splice(0, 1)[0];
@@ -180,7 +180,6 @@ export class ScorecardPage implements OnInit {
         // this.headerRow = parsedData.data.splice(0, 1)[0];
         this.CapexTarget = parsedData.data.splice(2, 1);
         this.CapexActual = parsedData.data.splice(2, 1);
-       
       }
     });
   }

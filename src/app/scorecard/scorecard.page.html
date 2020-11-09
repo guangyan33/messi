@@ -1,8 +1,6 @@
 <ion-header>
 </ion-header>
-
 <ion-content>
-
   <ion-grid>
     <ion-row>
       <ion-col size="4">
@@ -40,13 +38,22 @@
       <ion-col size="4">
         <ion-item>
           <ion-select placeholder="Dept" style="width: 100" ok-text="Okay" cancel-text="Nah">
-            <ion-select-option value="dos">DOS</ion-select-option>
-            <ion-select-option value="lunix">Linux</ion-select-option>
-            <ion-select-option value="mac7">Mac OS 7</ion-select-option>
-            <ion-select-option value="mac8">Mac OS 8</ion-select-option>
-            <ion-select-option value="win3.1">Windows 3.1</ion-select-option>
-            <ion-select-option value="win95">Windows 95</ion-select-option>
-            <ion-select-option value="win98">Windows 98</ion-select-option>
+            <ion-select-option value="dos">CDE</ion-select-option>
+            <ion-select-option value="lunix">ITSS</ion-select-option>
+            <ion-select-option value="mac7">SM</ion-select-option>
+            <ion-select-option value="mac8">CDO</ion-select-option>
+            <ion-select-option value="win3.1">Nwk Ops + Sys Ops</ion-select-option>
+            <ion-select-option value="win95">TAC</ion-select-option>
+            <ion-select-option value="win98">SGO</ion-select-option>
+            <ion-select-option value="win98">CC</ion-select-option>
+            <ion-select-option value="win98">SATOps</ion-select-option>
+            <ion-select-option value="win98">PM</ion-select-option>
+            <ion-select-option value="win98">CSS</ion-select-option>
+            <ion-select-option value="win98">GSP</ion-select-option>
+            <ion-select-option value="win98">DSS</ion-select-option>
+            <ion-select-option value="win98">GD/BOS</ion-select-option>
+            <ion-select-option value="win98">GEIM</ion-select-option>
+            <ion-select-option value="win98">GD/DSS</ion-select-option>
           </ion-select>
         </ion-item>
       </ion-col>
@@ -78,7 +85,6 @@
 
   <div class="info" [ngSwitch]="segment">
     <div *ngSwitchCase="'Financial'">
-
       <ion-grid>
         <ion-row>
           <ion-col size="2">
@@ -133,7 +139,6 @@
 
               <!-- <tr *ngFor="let row of FinancialType">
                 <td *ngIf="row[4]">{{row[4]}}</td>
-    
               </tr> -->
 
             </table>
@@ -280,69 +285,46 @@
 
     </div>
     <div *ngSwitchCase="'Digitalisation'">
-
       <ion-grid>
         <ion-row>
           <ion-col size="2">
             KPI
-
             <table border="1" class="data-table">
               <tr *ngFor="let row of DigitalisationKPI">
-
                 <td>{{row[2]}}</td>
-
               </tr>
-
-
             </table>
-
           </ion-col>
           <ion-col size="2">
             Target
-
             <table class="data-table">
-
               <tr *ngFor="let row of DigitalisationKPI">
                 <td *ngIf="row[3]">{{row[3]}}</td>
-
               </tr>
-
             </table>
-
-
           </ion-col>
           <ion-col size="2">
             Type
-
             <table class="data-table">
               <tr *ngFor="let row of DigitalisationKPI">
                 <td *ngIf="row[4]">{{row[4]}}</td>
-
               </tr>
-
             </table>
-
           </ion-col>
           <ion-col size="2">
-
             %
             <div *ngFor="let row of DigitalisationKPI">
               <div *ngIf="row[28] == '20'">Total:{{row[28]}}</div>
             </div>
-
             <table border="1" class="data-table-digital">
               <tr *ngFor="let row of DigitalisationKPI">
                 <td *ngIf="row[29]">{{row[29]}}</td>
-
               </tr>
-
             </table>
-
           </ion-col>
           <ion-col size="2">
             20 - {{getSelectedMonth}}
           </ion-col>
-
           <ion-col size="2">
             20 - {{getSelectedMonth}}
             <div class="TargetActual">
@@ -635,7 +617,6 @@
           <ion-col size="2">
             20 - {{getSelectedMonth}}
           </ion-col>
-
           <ion-col size="2">
             20 - {{getSelectedMonth}}
             <div class="TargetActual">
@@ -667,9 +648,6 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-
     </div>
-
-
   </div>
 </ion-content>
