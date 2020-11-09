@@ -51,6 +51,8 @@ export class ScorecardPage implements OnInit {
   MOKPIMActual: any[] = [];
   MOKPIYTarget: any[] = [];
   MOKPIYActual: any[] = [];
+  DSMARTPTarget: any[] = [];
+  DSMARTPActual: any[] = [];
   getSelectedMonth: any;
   a: number;
   counter = 0;
@@ -228,6 +230,8 @@ export class ScorecardPage implements OnInit {
         this.MOKPIMActual = parsedData.data.splice(3, 1);
         this.MOKPIYTarget = parsedData.data.splice(3, 1);
         this.MOKPIYActual = parsedData.data.splice(3, 1);
+        this.DSMARTPTarget = parsedData.data.splice(3, 1);
+        this.DSMARTPActual = parsedData.data.splice(3, 1);
       }
     });
   }
